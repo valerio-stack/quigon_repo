@@ -1,0 +1,333 @@
+.header {
+    background-color: rgb(24, 24, 24);
+    border-bottom: 1px solid rgb(68, 68, 68);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 24px;
+    padding-right: 24px;
+    box-sizing: border-box;
+}
+
+
+@media (max-width: 1050px) and (min-width: 900px) {    
+    .question_logo_container {
+        display: none !important;
+    }
+}
+
+@media (max-width: 899.9px) and (min-width: 600px) {
+    .header {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    .question_logo_container, .signup, .login {
+        display: none !important;
+    }
+
+    .profile {
+        display: inline-block !important;
+    }
+
+
+    .left_section, .middle_section {
+        margin-right: 0 !important;
+    }
+
+    .middle_section {
+        flex: 0.95 !important;
+    }
+
+    .q {
+        display: inline-block !important;
+    }
+
+    .quigon {
+        display: none !important;
+    }
+
+    .bottom_buttons:has(.tool_and_blog) {
+        margin-right: 0 !important;
+    }
+
+    .header2 svg, .divider, .tool_and_blog {
+        display: none !important;
+    }
+}
+
+@media (max-width: 599.9px) {
+    .header {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .header2 {
+        padding-left: 13px !important;
+    }
+
+    .question_logo_container, .signup, .login {
+        display: none !important;
+    }
+
+    .profile {
+        display: inline-block !important;
+    }
+
+
+    .left_section, .middle_section {
+        margin-right: 0 !important;
+    }
+
+    .middle_section {
+        flex: 0.95 !important;
+    }
+
+    .q {
+        display: inline-block !important;
+    }
+
+    .quigon {
+        display: none !important;
+    }
+
+    .bottom_buttons:has(.tool_and_blog, .model_hdri_free) {
+        margin-right: 0 !important;
+    }
+
+    .header2 svg, .divider, .tool_and_blog, .model_hdri_free{
+        display: none !important;
+    }
+
+    .burger_logo {
+        display: inline-block !important;
+    }
+}
+
+
+
+.left_section {
+    background-color: transparent;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 8vw;
+}
+
+.quigon {
+    display: inline-block;
+    background-color: transparent;
+    height: fit-content;
+    font-size: 22px;
+    font-family: "Figtree",sans-serif;
+    font-weight: bold;
+}
+
+.q {
+    display: none;
+    background-color: transparent;
+    height: fit-content;
+    font-size: 35px;
+    font-family: "Figtree",sans-serif;
+    font-weight: bold;
+}
+
+.middle_section {
+    background-color: transparent;
+    height: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    z-index: 3;
+    position: relative;
+    margin-right: 2vw;
+}
+
+
+.middle_section i {
+    position: absolute;
+    left: 15px;
+    background-color: transparent;
+    font-size: 18px;
+}
+
+.searchbar {
+    height: 68%;
+    width: 0;
+    flex: 1;
+    background-color: white;
+    border: none;
+    border-radius: 6px;
+    padding-left: 48px;
+    outline: none;
+    color: black;
+    font-size: 15px;
+}
+
+.searchbar::placeholder {
+    color: rgb(90, 90, 90);
+}
+
+.right_section {
+    background-color: transparent;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100%;
+}
+
+.question_logo_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 7px;
+    transition: 0.15s ease-in-out;
+    margin-right: 8px;
+    background-color: transparent;
+}
+
+.question_logo_container:hover {
+    cursor: pointer;
+    background-color: rgb(52, 52, 52);
+}
+
+.question_logo {
+    display: inline-block;
+    border: 2px solid rgb(200, 200, 200);
+    width: 16px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    color: rgb(200, 200, 200);
+}
+
+.login, .signup {
+    background-color: gray;
+    border-radius: 7px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    font-size: 12.5px;
+    text-wrap: nowrap;
+    font-weight: 600;
+}
+
+.login {
+    margin-right: 8px;
+    background-color: rgb(52, 52, 52);
+    transition: 0.15s ease-in-out;
+}
+
+.login:hover {
+    cursor: pointer;
+    background-color: rgb(77, 77, 77);
+}
+
+.signup {
+    background-color: rgb(35, 156, 255);
+    transition: 0.15s ease-in-out;
+    z-index: 1; /* agar ada diatas .profile */
+}
+
+.signup:hover {
+    cursor: pointer;
+    background-color: rgb(87, 179, 255);
+}
+
+.header2 {
+    background-color: rgb(24, 24, 24);
+    box-sizing: border-box;
+    width: 100%;
+    height: 45px;
+    border-bottom: 1px solid rgb(68, 68, 68);
+    padding-left: 24px;
+    padding-right: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.burger_logo {
+    filter: invert(100%);
+    background-color: transparent;
+    margin-right: 10px;
+    width: 24px;
+    display: none;
+}
+
+.header2 path, .header2 p {
+    color: rgb(188, 188, 188);
+    font-size: 13px;
+}
+
+.bottom_buttons {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    margin-right: 18px;
+}
+
+.bottom_buttons svg {
+    background-color: transparent;
+    margin-right: 6px;
+}
+
+.header2 p {
+    background-color: transparent;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    color: rgb(188, 188, 188);
+    margin-right: 18px;
+}
+
+.favorite_image {
+    /* filter: brightness(1); */
+    background-color: transparent;
+    width: 24px;
+}
+
+.left_section2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.right_section2 {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.right_section i {
+    background-color: transparent;
+    font-size: 13px;
+}
+
+.profile {
+    display: none;
+    border: 1px solid white;
+    background-color: transparent;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 50px;
+}

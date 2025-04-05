@@ -1,0 +1,14 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); /* figtree 400 */
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@500&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); /* figtree 500 */
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); /* figtree 600 */
+
+* {
+    background-color: rgb(18, 18, 18);
+    color: white;
+    font-family: "Figtree",sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
