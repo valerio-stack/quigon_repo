@@ -124,6 +124,7 @@
     font-size: 22px;
     font-family: "Figtree",sans-serif;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .q {
@@ -273,18 +274,76 @@
 .header2 path, .header2 p {
     color: rgb(188, 188, 188);
     font-size: 13px;
+    transition: 0.15s ease-in-out;
 }
+
+.bottom_buttons:hover {
+    cursor: pointer;
+}
+
+.bottom_buttons:nth-child(2):hover path {
+    color: rgb(181, 121, 255) !important;
+}
+
+.bottom_buttons:nth-child(6):hover path {
+    color: rgb(0, 170, 255) !important;
+}
+
 
 .bottom_buttons {
     background-color: transparent;
     display: flex;
     align-items: center;
     margin-right: 18px;
+    position: relative;
 }
 
 .bottom_buttons svg {
     background-color: transparent;
     margin-right: 6px;
+}
+
+.bottom_button_line {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1.5px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: white;
+    transition: 0.15s ease-in-out;
+    opacity: 0;
+}
+
+#texture_wrapper:hover .bottom_button_line {
+    opacity: 1;
+}
+
+#texture_wrapper {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+#texture_wrapper:hover ~ .dropdown_menu {
+    opacity: 1 !important;
+}
+
+.dropdown_menu {
+    position: absolute;
+    bottom: -231px;
+    background-color: rgb(24, 24, 24);
+    display: grid;
+    grid-template-columns: 116px 116px 176px 100px;
+    padding: 15px;
+    line-height: 2.2;
+    opacity: 0;
+    transition: 0.15s ease-in-out;
+}
+
+.dropdown_menu p {
+    color: white;
+    background-color: transparent;
 }
 
 .header2 p {
@@ -300,7 +359,6 @@
 }
 
 .favorite_image {
-    /* filter: brightness(1); */
     background-color: transparent;
     width: 24px;
 }
@@ -308,6 +366,7 @@
 .left_section2 {
     display: flex;
     flex-direction: row;
+    background-color: transparent;
 }
 
 .right_section2 {
