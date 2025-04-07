@@ -334,8 +334,8 @@
     align-items: center;
 }
 
-#texture_wrapper:hover ~ .dropdown_menu {
-    opacity: 1;
+#texture_wrapper:hover ~ .dropdown_menu, .dropdown_menu:hover {
+    display: grid;
 }
 
 .dropdown_menu {
@@ -346,7 +346,7 @@
     grid-template-columns: 116px 116px 176px 100px;
     padding: 15px;
     line-height: 2.2;
-    opacity: 0;
+    display: none;
     transition: 0.15s ease-in-out;
 }
 
