@@ -57,6 +57,12 @@
     font-weight: 600;
     border-radius: 8px;
     margin-right: 8px;
+    transition: 0.15s ease-in-out;
+}
+
+.section1_left_signup:hover {
+    filter: brightness(120%);
+    cursor: pointer;
 }
 
 .section1_left_pricing {
@@ -67,6 +73,12 @@
     font-size: 14px;
     font-weight: 600;
     border-radius: 8px;
+    transition: 0.15s ease-in-out;
+}
+
+.section1_left_pricing:hover {
+    cursor: pointer;
+    filter: brightness(180%);
 }
 
 .section1_left_artists {

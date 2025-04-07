@@ -281,12 +281,16 @@
     cursor: pointer;
 }
 
+.bottom_button_line:hover .bottom_button_line {
+    opacity: 1;
+}
+
 .bottom_buttons:nth-child(2):hover path {
-    color: rgb(181, 121, 255) !important;
+    color: rgb(181, 121, 255) ;
 }
 
 .bottom_buttons:nth-child(6):hover path {
-    color: rgb(0, 170, 255) !important;
+    color: rgb(0, 170, 255);
 }
 
 
@@ -296,6 +300,10 @@
     align-items: center;
     margin-right: 18px;
     position: relative;
+}
+
+.bottom_buttons:hover:not(:nth-child(3)) .bottom_button_line {
+    opacity: 1;
 }
 
 .bottom_buttons svg {
@@ -320,13 +328,14 @@
 }
 
 #texture_wrapper {
+    background-color: transparent;
     display: flex;
     height: 100%;
     align-items: center;
 }
 
 #texture_wrapper:hover ~ .dropdown_menu {
-    opacity: 1 !important;
+    opacity: 1;
 }
 
 .dropdown_menu {
@@ -343,6 +352,10 @@
 
 .dropdown_menu p {
     color: white;
+    background-color: transparent;
+}
+
+.dropdown_menu div {
     background-color: transparent;
 }
 
